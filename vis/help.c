@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   help.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: btheia <btheia@student.42.fr>              +#+  +:+       +#+        */
+/*   By: btheia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/07 18:25:14 by btheia            #+#    #+#             */
-/*   Updated: 2020/03/07 19:11:49 by btheia           ###   ########.fr       */
+/*   Updated: 2020/06/16 23:41:37 by btheia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	init_text(t_vis *vis)
 
 	bmp = NULL;
 	vis->win = SDL_CreateWindow("FILLER by btheia!",
-		100, 100, 1200, hw, SDL_WINDOW_SHOWN);
+		100, 100, 1200, 800, SDL_WINDOW_SHOWN);
 	(vis->win == NULL) ? exit(0) : 0;
 	vis->ren = SDL_CreateRenderer(vis->win, -1,
 		SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
